@@ -9,13 +9,17 @@ body{
   color: rgb(34, 168, 34);
   text-shadow: 2px 2px 2px #d4cfcf;
 }
-
-#myDiv {
-
-  width:100%;
-
+#myCarousel{background-color:#000300a3;}
+#more {display: none;}
+#mores {display: none;}
+#myBtn{
+      background-color: #22a822;
+    color: white;
 }
-
+#myBtns{
+      background-color: #22a822;
+    color: white;
+}
 
 .imgh {
     /* max-width: 100%; */
@@ -482,9 +486,10 @@ padding: 0px;
 .but{
     position: fixed;
     z-index: 10;
-    top: 16px;
-    right: 10px;
+    top: 20px;
+    right: 25px;
     background: none;
+    border: 2px solid #06a627;
 } 
 
 .navtop{
@@ -848,7 +853,7 @@ width: 250px;
 }
 
 .img1{
-  background-image: url(./images/bedroom_WM/img1.jpg);
+  background-image: url(./images/living.jpg);
     background-size: cover !important;
     padding: 0px;
    }
@@ -984,7 +989,7 @@ width: 250px;
     background: rgba(42, 210, 201, 0.63);
 }
 .img6{
-  background-image: url(./images/commercial\ space/img6.jpg);
+  background-image: url(./images/workarea.jpg);
     background-size: cover !important;
     padding: 0px;
    }
@@ -1077,110 +1082,8 @@ body {
 font-size: 17px;
 font-family: cursive
 }
-.third p{
-  font-size: 17px;
-  font-family: cursive
-}
-.fourth p{
-  font-size: 17px;
-  font-family: cursive
-}
-.fifth p{
-  font-size: 17px;
-  font-family: cursive
-}
-.sisth p{
-  font-size: 17px;
-  font-family: cursive
-}
-  .secound{
-    background-color: rgba(153, 120, 28, 0.8);
- 
-   padding-top:25%
-} 
-.third{
-    background-color: rgba(173, 81, 58, 0.8);
-   padding-top:25%
-} 
-.fourth{
-    background-color: rgba(34, 23, 28, 0.8);
-   padding-top:25%
-} 
-.fifth{
-    background-color: rgba(124, 71, 91, 0.8);
-   padding-top:25%
-} 
-.sisth{
-    background-color: rgba(54, 19, 41, 0.8);
-    opacity: 0.6;
-   padding-top:25%
-} 
-.fixednav{position: fixed;
-z-index: 9;
-color: white;
-    margin-left: 5px;}
-  
-  .overlay {
-    height: 0%;
-    width: 100%;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left:0;
-    background-color: rgb(0,0,0);
-    background-color: rgba(0,0,0, 0.3);
-    overflow-y: hidden;
-    transition: 0.5s;
-  }
-  
-  .overlay-content {
-    position: relative;
-    top: 0%;
-    width: 100%;
-    height: 100%;
-    text-align: center;
-    margin-top: 0px;
-  
-  }
-  
-  .overlay a {
-    padding: 30px;
-    text-decoration: none;
-    font-size: 25px;
-    height: 100%;
-    color: #818181;
-    display:inline-block;
-    transition: 0.3s;
-    color: white
-  }
-  .overlay-content a{
-      padding-top: 21%;
-      width: 20%;
-      text-align: center;
-      float: left;
-  }
-  
-  .overlay a:hover, .overlay a:focus {
-    color: #f1f1f1;
-  }
-  
-  .overlay .closebtn {
-    position: absolute;
-    top: 20px;
-    right: 45px;
-    font-size: 38px;
-    z-index: 9;
-  }
-  
-  @media screen and (max-height: 450px) {
-    .overlay {overflow-y: auto;}
-    .overlay a {font-size: 20px}
-    .overlay .closebtn {
-    font-size: 40px;
-    top: 15px;
-    right: 35px;
-    }
-  }
+
+
  
 
 .our-team-main
@@ -1275,15 +1178,17 @@ background-image:url(./images/testo.png);
 color: white;
 }
 .cen{
-  background-color: rgba(34, 32, 32, 0.486)
+  background-color:rgba(34, 32, 32, 0.7)
+}
+.centerimg{text-align: center;
 }
 .centerimg img{
   border-radius: 50%;
-  margin-left: 250px;
+
 }
 .toTop{
   position: fixed;
-  right: 1%;
+  right: 2%;
   bottom:2%;
   z-index: 2;
 
