@@ -93,7 +93,11 @@ body{
 	        opacity:0;
 	    }
   }
-  
+
+
+  .carousel-indicators{
+    z-index: 5;
+  }
 /* gallery  */
 
 /*------------------------------------*\
@@ -690,7 +694,7 @@ padding: 0px;
         -webkit-background-clip: text !important;
         -webkit-text-fill-color: transparent !important;
     }
-    
+     
     .contact-form .form-field {
       position: relative;
       margin: 32px 0;
