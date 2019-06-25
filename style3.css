@@ -15,10 +15,12 @@ body{
 #myBtn{
       background-color: #22a822;
     color: white;
+    border-radius: 12px;
 }
 #myBtns{
       background-color: #22a822;
     color: white;
+    border-radius: 12px;
 }
 
 .imgh {
@@ -50,8 +52,50 @@ body{
   background-image: url(./images/sliderbg1.jpg);
 
 }
-
-
+/* slide contact */
+.modal-dialog {
+  top: 0px;
+  right: 0px;
+  width: auto;
+  margin: .5rem;
+  pointer-events: none;
+  position: absolute;
+}
+.getin{
+  position: absolute;
+  z-index: 5;
+  top: 20px;
+  right: 0px;
+  vertical-align:top;
+  width:80px;height:30px;
+  transform:rotate(7deg);
+}
+#feedback {
+  height: 0px;
+  width: 85px;
+  position: fixed;
+  right: 0;
+  top: 50%;
+  z-index: 5;
+  transform: rotate(-90deg);
+  -webkit-transform: rotate(-90deg);
+  -moz-transform: rotate(-90deg);
+  -o-transform: rotate(-90deg);
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+}
+#feedback a {
+  display: block;
+  background: #22a822;
+  height: 52px;
+  padding-top: 10px;
+  width: 155px;
+  text-align: center;
+  color: #fff;
+  font-family: Arial, sans-serif;
+  font-size: 17px;
+  font-weight: bold;
+  text-decoration: none;
+}
 
 	/* keyframes #anim_slides */
 
@@ -93,7 +137,11 @@ body{
 	        opacity:0;
 	    }
   }
-  
+
+
+  .carousel-indicators{
+    z-index: 5;
+  }
 /* gallery  */
 
 /*------------------------------------*\
@@ -483,14 +531,19 @@ padding: 0px;
 
 }
 
-.but{
+ .but{
     position: fixed;
     z-index: 10;
-    top: 20px;
-    right: 25px;
+    top: 57px !important;
+    right: 43px !important;
     background: none;
     border: 2px solid #06a627;
 } 
+@media screen and (max-width: 700px) and (min-width: 250px) {
+  .but{top: 7px !important;
+  right: 20px !important;}
+   }
+
 
 .navtop{
     position: fixed;
@@ -545,19 +598,24 @@ padding: 0px;
 
 
    @media screen and (max-width: 1950px) and (min-width: 1450px) {
-    #link1{left: 7%};
+    #link1{left: 7%;
+    top: 425px};
     }
     @media screen and (max-width: 1950px) and (min-width: 1450px) {
-    #link2{left: 27% !important};
+    #link2{left: 27% !important;
+      top: 425px};
     }
     @media screen and (max-width: 1950px) and (min-width: 1450px) {
-    #link3{left: 46% !important};
+    #link3{left: 46% !important;
+      top: 425px};
     }
     @media screen and (max-width: 1950px) and (min-width: 1450px) {
-    #link4{left: 66% !important};
+    #link4{left: 66% !important;
+      top: 425px};
     }
     @media screen and (max-width: 1950px) and (min-width: 1450px) {
-    #link5{left: 86% !important}
+    #link5{left: 86% !important;
+      top: 425px}
      }
   
 
@@ -690,7 +748,7 @@ padding: 0px;
         -webkit-background-clip: text !important;
         -webkit-text-fill-color: transparent !important;
     }
-    
+     
     .contact-form .form-field {
       position: relative;
       margin: 32px 0;
@@ -812,11 +870,31 @@ width: 250px;
     font-size: 9px
   }
 }
+@media screen and (max-width: 599px) and (min-width: 300px) {
+  .w3-banner-head1{
+    padding-left: 0.5em !important;
+    border-left: 5px solid #fe9200 !important;
+  }
+  .w3-banner-head2{
+    padding-left: 0.5em !important;
+    border-left: 5px solid #fe9200 !important;
+  }
+  .w3-banner-head3{
+    padding-left: 0.5em !important;
+    border-left: 5px solid #fe9200 !important;
+
+  }
+  .w3-banner-head4{
+    padding-left: 0.5em !important;
+    border-right: 5px solid #fe9200 !important;
+ 
+  }
+}
 .w3-banner-head2 {
   position: absolute;
   width: 12%;
   bottom: 69%;
-  left: 45%;
+  left: 44%;
   z-index: 5;
   padding-left: 1.5em;
   border-left: 10px solid #fe9200;
@@ -845,6 +923,7 @@ width: 250px;
   color: #fff;
   text-transform: uppercase;
 }
+
 #main{
   padding: 0px
 }
@@ -1188,7 +1267,7 @@ color: white;
 }
 .toTop{
   position: fixed;
-  right: 2%;
+  right: 3%;
   bottom:2%;
   z-index: 2;
 
