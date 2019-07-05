@@ -72,7 +72,7 @@
                 <a class="nav-link" href="index.php"><button  id="link1" style="background:none;border:none"><h2 class="menusize">HOME</h2></button></a>
               </li>
               <li class="nav-item" id="b" style="display: none">
-                <a class="nav-link" href="about.php#abt"><button id="link2"  style="background:none;border:none"><h2 class="menusize">ABOUT</h2></button></a>
+                <a class="nav-link" href="#abt"><button id="link2"  style="background:none;border:none"><h2 class="menusize" id="active">ABOUT</h2></button></a>
               </li>
               <li class="nav-item" id="c"style="display: none">
                 <a class="nav-link" href="our services.php#ser"><button  id="link3" style="background:none;border:none"><h2 class="menusize">SERVICES</h2></button></a>
@@ -165,7 +165,7 @@
   <div class="container" id="abt">
     <h1 class="h1tag">Who We Are</h1>
     <div class="row">
-      <div class="col-md-6  p-2 align-self-center">
+      <div class="col-md-6 jus p-2 align-self-center">
         <p> Mugdha Interior Services (A Product of Neuronoids Pvt Ltd.,) is a novel interior design company with an
           intention to provide end to end interior solutions for all types of structures whether it is a new
           construction or a refurbishment. We are a team of multi-disciplinary with a passion to design projects that
@@ -178,7 +178,7 @@
         <span id="dots">...</span><span id="more">It is our policy to listen first, take notes and assist our customers in the development of their personal
           style. We love pushing the limits with creativity to satisfy the needs of our customer while crafting
           beautiful spaces.</span></p>
-          <button onclick="myFunction()" id="myBtn">Read more</button>
+          <button onclick="myFunction()" id="myBtn">Read More</button>
       </div>
       <div class="col-md-6 p-2 align-self-center">
         <img src="images/living room_WM/about.jpg" width="550px" class="img-fluid" style="border-radius:4px ">
@@ -194,7 +194,7 @@
         <br>
         <img src="images/living room_WM/about2.jpg" width="550px" class="img-fluid" style="border-radius:4px ">
       </div>
-      <div class="col-md-6 p-2 align-self-center">
+      <div class="col-md-6 jus p-2 align-self-center">
         <br>
         <p>We provide design strategies that mediate and re-interpret the boundary between traditional/cultural and
           contemporary living: a fusion that blends old and new, international and regional. Our designer will give
@@ -216,9 +216,9 @@
   <div class="container">
     <h1 class="h1tag">How We Work</h1>
     <div class="row">
-      <div class="col-md-6 p-2 align-self-center">
-      <h3>We are a missed call away to assist you..
-Six “C” approach</h3>
+      <div class="col-md-6 jus p-2 align-self-center">
+   
+<h3 class="hclr">Six “C” approach:</h3>
         <p> <b>Conceive : -</b> Look at our stylish designs to get an idea of what designs might be delights for your
           space.</p>
         <p><b>Collaborate : -</b>Our worriers will assist you by understanding your needs </p>
@@ -228,6 +228,7 @@ Six “C” approach</h3>
           start the physical activity</p>
         <p><b>Commission : -</b>We will build the space physically as per the approved designs </p>
         <p><b>Celebrate : -</b>It is the time to celebrate</p>
+        <h3 class="hclr">We are a missed call away to assist you..</h3>
       </div>
       <div class="col-md-6">
         <br>
@@ -245,7 +246,7 @@ Six “C” approach</h3>
         <br>
         <img src="images/living room_WM/first.jpg" width="550px" class="img-fluid" style="border-radius:4px ">
       </div>
-      <div class="col-md-6 p-2 align-self-center">
+      <div class="col-md-6 p-2 jus align-self-center">
         <br>
         <p>When there is a tie between customer needs and design constraints, our demiurgic brains break the challenge
           with our exceptionally quick wits and tremendous adaptability powers. We bring in 3D visuals to moderate our
@@ -262,7 +263,7 @@ Six “C” approach</h3>
   <div class="container">
     <h2 class="h1tag">Our Quality Policy</h2>
     <div class="row">
-      <div class="col-md-6 p-2 align-self-center">
+      <div class="col-md-6 jus p-2 align-self-center">
         <br>
         <p> Our motto is always to provide the best of Quality in all that we do right from inception to completion of
           the interior designing project and also efforts are put to continuously improve the quality as we believe that
@@ -280,14 +281,14 @@ Six “C” approach</h3>
   <br>
   <!-- How to meet optimal design budget -->
   <div class="container">
-    <h2 class="h1tag">How to meet optimal design budget</h2>
+    <h2 class="h1tag">How To Meet Optimal Design Budget</h2>
     <div class="row">
       <div class="col-md-6" style="text-align: center">
         <br>
         <img src="images/office interior/conference rooms/about7.jpg" width="550px" class="img-fluid"
           style="border-radius:4px ">
       </div>
-      <div class="col-md-6 p-2 align-self-center">
+      <div class="col-md-6 p-2 jus align-self-center">
         <br>
         <p> Our customer should confer about the requisites with us, which would help in moulding architectural model
           and depending upon the approval we would provide the quotation of expenditure for the same. Upon completion of
@@ -320,8 +321,8 @@ Six “C” approach</h3>
             </div>
             <div class="col-md-6 px-4">
               <h6> About Company</h6>
-              <a href="about.php" class="btn-footer"> More Info </a><br>
-              <a href="contact.php" class="btn-footer"> Contact Us</a>
+              <a href="about.php#abt" class="btn-footer"> More Info </a><br>
+              <a href="contact.php#cont" class="btn-footer"> Contact Us</a>
             </div>
           </div>
         </div>
@@ -331,12 +332,12 @@ Six “C” approach</h3>
               <h6> Help us</h6>
               <div class="row ">
                 <div class="col-md-6">
-                  <ul>
-                    <li> <a href="#"> Home</a> </li>
-                    <li> <a href="#"> About</a> </li>
-                    <li> <a href="#"> Service</a> </li>
-                    <li> <a href="#"> Gallery</a> </li>
-                    <li> <a href="#"> Contact</a> </li>
+                <ul>
+                    <li> <a href="index.php"> Home</a> </li>
+                    <li> <a href="about.php#abt"> About</a> </li>
+                    <li> <a href="our services.php#ser"> Service</a> </li>
+                    <li> <a href="gallery.php#reception"> Gallery</a> </li>
+                    <li> <a href="contact.php#cont"> Contact</a> </li>
                   </ul>
                 </div>
               </div>

@@ -67,7 +67,7 @@ $msg = 'Invalid email address, message ignored.';
 
 }
 ?>
-<form id="contact" action="" method="POST">
+<form name="myForm" id="contact" action="" method="POST" onsubmit="return myFun()">
       <h2 class="h1tag">Quick Contact</h2>
       <h4>Contact us today, and get reply with in 24 hours!</h4>
       <fieldset>
@@ -76,15 +76,64 @@ $msg = 'Invalid email address, message ignored.';
        
       </fieldset>
       <fieldset>
-        <input placeholder="Your Email Address" name="email"  type="email" tabindex="2" required>
+        <input placeholder="Your Email Address" name="email"  type="email" tabindex="2" >
+        <span id="Message"> </span>
       </fieldset>
       <fieldset>
-        <input placeholder="Your Phone Number" name="number" type="tel" tabindex="3" required>
+        <input placeholder="Your Phone Number" name="number" id="mobilenumber" type="tel" tabindex="3">
+             <span id="Message"> </span>
       </fieldset>
       <fieldset>
-        <textarea placeholder="Type your Message Here...." name="message" tabindex="5" required></textarea>
+        <textarea placeholder="Type your Message Here...." name="message" tabindex="5"></textarea>
       </fieldset>
       <fieldset>
         <button name="submit" type="submit" id="contact-submit" value="send" name="save" data-submit="...Sending">Submit</button>
       </fieldset>
     </form>
+    <script>
+
+// function myFun() {
+// 	var a = document.myForm.email.value;     // raju@gmail.com
+// 	if(a.indexOf('@')<=0) {   //@gmail.com
+// 		document.getElementById("Message").innerHTML ="Invalid @ position ";
+// 		return false;
+// 	}
+// 	//thapa@gmail.com  
+// 	if(a.charAt(a.length-4)!='.') {
+// 		document.getElementById("Message").innerHTML ="Invalid . position ";
+// 		return false;
+// 	}
+// 	//thapa@gmail.co
+// 	if(a.charAt(a.length-4)!='.') {
+// 		document.getElementById("Message").innerHTML ="Invalid . positionss ";
+// 		return false;
+//   }
+// }
+
+  </script>
+  <script>
+function myFun() {
+	
+	var a = document.getElementById("mobilenumber").value;   
+	if(a == "") {  
+		document.getElementById("Message").innerHTML ="Please Enter Mobile Number";
+		return false;
+	}
+	if(isNaN(a)) {  
+		document.getElementById("Message").innerHTML ="Please Enter Numeric values";
+		return false;
+	}
+	
+	if(a.length<10) {
+		document.getElementById("Message").innerHTML ="Mobile Number must be 10 digits";
+		return false;
+	}
+	
+	if(a.length>10) {
+		document.getElementById("Message").innerHTML ="Mobile Number must be 10 digits ";
+		return false;
+	}
+	
+}
+</script>
+

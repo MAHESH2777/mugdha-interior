@@ -2,9 +2,9 @@
 <html>
 
 <head>
-<meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="images/logom.png" type="image/x-icon">
     <title>Mugdha Interiors</title>
@@ -77,8 +77,8 @@
         <nav class="navbar navbar-expand-sm">
             <ul class="navbar-nav">
                 <li class="nav-item" id="a" style="display: none">
-                    <a class="nav-link" href="index.php"><button id="link1" style="background:none;border:none">
-                            <h2 class="menusize">HOME</h2>
+                    <a class="nav-link " href="index.php"><button id="link1" style="background:none;border:none">
+                            <h2 class="menusize" id="active">HOME</h2>
                         </button></a>
                 </li>
                 <li class="nav-item" id="b" style="display: none">
@@ -223,9 +223,9 @@
     <br>
     <!-- About-->
     <div class="container">
-        <h1 class="h1tag">ABOUT US</h1>
+        <h1 class="h1tag">About Us</h1>
         <div class="row">
-            <div class="col-md-6 pt-5">
+            <div class="col-md-6 jus pt-5">
                 <h3>Welcome To Mugdha Interiors </h3>
                 <br>
 
@@ -243,7 +243,7 @@
     <!--our design -->
     <br>
     <div class="our design">
-        <h1 class="h1tag">GALLERY</h1>
+        <h1 class="h1tag">Gallery</h1>
         <br>
         <div class="container-fluid">
             <div class="row">
@@ -310,7 +310,7 @@
     <!-- OUR PROJECTS -->
     <div class="container">
         <br>
-        <h1 class="h1tag">OUR TEAM</h1>
+        <h1 class="h1tag">Our Team</h1>
         <br>
         <div class="row mt-30">
             <div class="col-md-3 col-sm-6">
@@ -350,7 +350,7 @@
     </div>
     <br>
     <br>
-    <h1 class="h1tag">TESTIMONIALS</h1>
+    <h1 class="h1tag">Testimonials</h1>
     <br>
     <div class="center">
         <div class="container-fluid cen">
@@ -401,7 +401,7 @@
     <br>
     <div class="contact">
         <div class="container-fluid">
-            <h1 class="h1tag">Mugdha interiors Location</h1>
+            <h1 class="h1tag"> Location</h1>
             <br>
             <div class="row">
                 <div class="col-md-12">
@@ -409,19 +409,79 @@
                 </div>
             </div>
         </div>
+        <br>
         <div class="container">
             <div class="row">
 
-                <div class="col-md-12">
+                <div class="col-md-12 fmbg">
+                    <form name="myForm" id="contact" action="" method="POST" onsubmit="return myFunction()">
+                        <h2 class="h1tag">Quick Contact</h2>
+                        <h4>Contact us today, and get reply with in 24 hours!</h4>
+                        <div>
+                            <span> <i class="fa fa-user fa-2x" style="color:gray"></i></span>
+                            <fieldset>
 
-                    <?php include('contact_form.php'); ?>
+                                <input placeholder="Yourname" name="name" type="text" tabindex="1" required>
 
+                            </fieldset>
+                        </div>
+                        <div>
+                            <span> <i class="fa fa-envelope-square fa-2x" style="color:gray"></i></span>
+                            <fieldset>
 
+                                <input placeholder=" Your Email Address" name="email" type="email" tabindex="2" required>
+
+                            </fieldset>
+                        </div>
+                        <div>
+                            <span> <i class="fa fa-phone fa-2x" style="color:gray"></i></span>
+                            <fieldset>
+
+                                <input placeholder="Your Phone Number" name="number" id="mobile-number" type="tel" tabindex="3">
+                                <span id="Mes"> </span>
+                            </fieldset>
+                        </div>
+                        <div>
+                            <span style="float-left"> <i class="fa fa-user fa-2x" style="color:gray"></i></span>
+                            <fieldset>
+
+                                <textarea placeholder="Type your Message Here...." name="message" tabindex="5"></textarea>
+                            </fieldset>
+                        </div>
+                        <fieldset>
+                            <button name="submit" type="submit" id="" value="send" name="save" data-submit="...Sending">Submit</button>
+                        </fieldset>
+                    </form>
+                    <script>
+                        function myFunction() {
+
+                            var a = document.getElementById("mobile-number").value;
+                            if (a == "") {
+                                document.getElementById("Mes").innerHTML = "Please Enter Mobile Number";
+                                return false;
+                            }
+                            if (isNaN(a)) {
+                                document.getElementById("Mes").innerHTML = "Please Enter Numeric values";
+                                return false;
+                            }
+
+                            if (a.length < 10) {
+                                document.getElementById("Mes").innerHTML = "Mobile Number must be 10 digits";
+                                return false;
+                            }
+
+                            if (a.length > 10) {
+                                document.getElementById("Mes").innerHTML = "Mobile Number must be 10 digits ";
+                                return false;
+                            }
+
+                        }
+                    </script>
                 </div>
             </div>
         </div>
     </div>
-
+    <br>
 
     <!--footer-->
     <footer class="container-fluid bg-grey py-5">
@@ -441,14 +501,12 @@
                                     Ph:-040-48531655/755<br>
                                     Email: Info@mugdhainteriors.com
                                 </p>
-
                             </div>
                         </div>
                         <div class="col-md-6 px-4">
                             <h6> About Company</h6>
-
-                            <a href="about.php" class="btn-footer"> More Info </a><br>
-                            <a href="contact.php" class="btn-footer"> Contact Us</a>
+                            <a href="about.php#abt" class="btn-footer"> More Info </a><br>
+                            <a href="contact.php#cont" class="btn-footer"> Contact Us</a>
                         </div>
                     </div>
                 </div>
@@ -459,15 +517,13 @@
                             <div class="row ">
                                 <div class="col-md-6">
                                     <ul>
-                                        <li> <a href="#"> Home</a> </li>
-                                        <li> <a href="#"> About</a> </li>
-                                        <li> <a href="#"> Service</a> </li>
-                                        <li> <a href="#"> Gallery</a> </li>
-                                        <li> <a href="#"> Contact</a> </li>
-
+                                        <li> <a href="index.php"> Home</a> </li>
+                                        <li> <a href="about.php#abt"> About</a> </li>
+                                        <li> <a href="our services.php#ser"> Service</a> </li>
+                                        <li> <a href="gallery.php#reception"> Gallery</a> </li>
+                                        <li> <a href="contact.php#cont"> Contact</a> </li>
                                     </ul>
                                 </div>
-
                             </div>
                         </div>
                         <div class="col-md-6 ">
@@ -476,8 +532,6 @@
                                 <a target="_blank" href="https://www.facebook.com/mugdhainteriors/"><i class="fa fa-facebook" aria-hidden="true"></i></a>
                                 <a target="_blank" href="https://www.instagram.com/mugdhainteriorshyd/"><i class="fa fa-instagram" aria-hidden="true"></i></a>
                             </div>
-
-
                         </div>
                     </div>
                 </div>
@@ -488,13 +542,11 @@
 <script>
     $(document).ready(function() {
         $(".but").click(function() {
-
             $("#a").toggle(1000);
             $("#b").toggle(1200);
             $("#c").toggle(1300);
             $("#d").toggle(1400);
             $("#e").toggle(1500);
-
         });
     });
 </script>
@@ -503,6 +555,4 @@
         interval: 4000
     });
 </script>
-
-
 </html>

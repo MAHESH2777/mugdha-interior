@@ -1,6 +1,12 @@
 body{
   font-family: 'Roboto', sans-serif;
 }
+.jus{
+  text-align: justify !important;
+}
+.hclr{
+  color:orange
+}
 .h1tag{
   text-align: center;
   letter-spacing: 2px;
@@ -16,11 +22,18 @@ body{
       background-color: #22a822;
     color: white;
     border-radius: 12px;
+    border: none;
+    font-weight: bold;
 }
 #myBtns{
       background-color: #22a822;
     color: white;
     border-radius: 12px;
+    border: none;
+    font-weight: bold;
+}
+#active{
+  color: #fe9200
 }
 
 .imgh {
@@ -95,6 +108,7 @@ body{
   font-size: 17px;
   font-weight: bold;
   text-decoration: none;
+  border-radius: 30px
 }
 
 	/* keyframes #anim_slides */
@@ -386,11 +400,16 @@ body{
 fieldset {
 	border: medium none !important;
 	margin: 0 0 10px;
-	min-width: 100%;
+	min-width: 95%;
 	padding: 0;
-	width: 100%;
-}
+  width: 90%;
+  display: inline;
 
+  text-align: center;
+}
+.fmbg{
+  background-color: #f9f9f9
+}
 #contact input[type="text"], #contact input[type="email"], #contact input[type="tel"], #contact input[type="url"], #contact textarea {
 	width:100%;
 	border:1px solid #CCC;
@@ -414,9 +433,11 @@ fieldset {
 
 #contact button[type="submit"] {
 	cursor:pointer;
-	width:100%;
+
 	border:none;
-	background:#22a822;
+  background:#22a822;
+  border-radius: 20px;
+ font-weight: bold;
 	color:#FFF;
 	margin:0 0 5px;
 	padding:10px;
@@ -917,6 +938,7 @@ width: 250px;
   width: 12%;
   bottom: 13%;
   left: 41%;
+  text-align: center;
   z-index: 5;
   padding-left: 1.5em;
   border-right: 10px solid #fe9200;

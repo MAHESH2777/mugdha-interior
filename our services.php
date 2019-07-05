@@ -79,7 +79,7 @@
                 <a class="nav-link" href="about.php#abt"><button id="link2"  style="background:none;border:none"><h2 class="menusize">ABOUT</h2></button></a>
               </li>
               <li class="nav-item" id="c"style="display: none">
-                <a class="nav-link" href="our services.php#ser"><button  id="link3" style="background:none;border:none"><h2 class="menusize">SERVICES</h2></button></a>
+                <a class="nav-link" href="our services.php#ser"><button  id="link3" style="background:none;border:none"><h2 class="menusize" id="active">SERVICES</h2></button></a>
               </li>
               <li class="nav-item" id="d"style="display: none">
                     <a class="nav-link" href="gallery.php#reception"><button  id="link4" style="background:none;border:none"><h2 class="menusize">GALLERY</h2></button></a>
@@ -171,7 +171,7 @@
   <div class="container" id="ser">
     <h1 class="h1tag">Consultation</h1>
     <div class="row">
-      <div class="col-md-6 p-2 align-self-center">
+      <div class="col-md-6 jus p-2 align-self-center">
 
         <br>
 
@@ -202,7 +202,7 @@
           src="https://images.unsplash.com/photo-1461344577544-4e5dc9487184?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&q=60"
           width="550px" style="border-radius:4px " class="img-fluid">
       </div>
-      <div class="col-md-6 p-2 align-self-center">
+      <div class="col-md-6 jus p-2 align-self-center">
         <br>
         <p><b>Site Visit: - </b>Our work starts with Site Visit, during this phase; we even collect all the required
           measurements where we need to design for in the form of a checklist.
@@ -213,17 +213,23 @@
         </p>
         <p><b>Gathering of Requirements & Plans (Floor & Electrical): - </b>We would be having detailed interview
           process with the client to gather the requirements of our clientele. We will collect the Floor and Electrical
-          plan as part of first step.<span id="dots">...</span>
-      <span id="more"><b>Design Preparation: - </b>Based on the inputs from meetings and interviews, our design professionals study
+          plan as part of first step.
+          <br>
+          <br>
+          <span id="dots">...</span><span id="more">
+      <b>Design Preparation: - </b>Based on the inputs from meetings and interviews, our design professionals study
           the floor/electrical plans of the site and conceptualize to themes and schemes that can transform the site as
           per the needs of the clients.<br>
+          <br>
         <b>Design Presentation: -</b> The design concepts are then tranformed through rendered graphics and the same
           being presented to our clients for their visualization.<br>
+          <br>
         <b>Design Refinements: -</b> From the previous phase, we might get into refinements and the same would be
           carried until we reach to common consensus on the designs.<br>
+          <br>
         <b>Design Finalization: -</b> In this phase the final 3D designs would get prepared based on the themes
           agreed / approved by client. These 3D designs play vital role in sub-sequent phases.</span></p>
-          <button onclick="myFunction()" id="myBtn">Read more</button>
+          <button onclick="myFunction()" id="myBtn">Read More</button>
       </div>
     </div>
   </div>
@@ -232,7 +238,7 @@
   <div class="container">
     <h1 class="h1tag">Building</h1>
     <div class="row">
-      <div class="col-md-6 p-2 align-self-center">
+      <div class="col-md-6 jus p-2 align-self-center">
         <br>
         <p><b>Blue Print & Material Selection: -</b> we will create working drawings with exact measurements and
           parameters for guiding the work force in proper implementation for the future phases. The graphics of the
@@ -255,13 +261,13 @@
   <div class="container">
     <h2 class="h1tag">Customer Engagement</h2>
     <div class="row">
-      <div class="col-md-6 p-2 align-self-center">
+      <div class="col-md-6 jus p-2 align-self-center">
         <br>
         <img
           src="https://images.unsplash.com/photo-1556745753-b2904692b3cd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&q=60"
           width="550px" class="img-fluid" style="border-radius:4px ">
       </div>
-      <div class="col-md-6 pt-5">
+      <div class="col-md-6 jus pt-5">
         <p><b> Finalization of Cost & Budget: - </b>We will prepare the cost sheets based on the information collected
           in the previous stages. We will ensure these cost sheets are in line with the budgetary constraints given by
           the clients. If there are cost overruns then a special exercise is undertaken in re-negotiating deals, using
@@ -281,7 +287,7 @@
   <div class="container">
     <h2 class="h1tag">Project Preparation</h2>
     <div class="row">
-        <div class="col-md-6 pt-5">
+        <div class="col-md-6 jus jus pt-5">
         <p><b>Kick-start of the Project: -</b> Upon approval of the proposal and receipt of the advance from client, the
           project would get kickstart. </p>
         <p><b>Material Requirement Schedules: -</b> Material requirement schedules being prepared to enable us to place
@@ -307,28 +313,30 @@
     <h2 class="h1tag">Project Execution</h2>
     <br>
     <div class="row">
-      <div class="col-md-6 p-2 align-self-center">
+      <div class="col-md-6 jus p-2 align-self-center">
         <br>
         <img
           src="https://images.unsplash.com/photo-1516455590571-18256e5bb9ff?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&q=60"
           width="550px" style="border-radius:4px" class="img-fluid">
       </div>
-      <div class="col-md-6 p-2 align-self-center">
+      <div class="col-md-6 jus p-2 align-self-center">
         <p><b>Project Implementation: - </b>We have a dedicated well-organized professional expert in monitor and guide
           the contractor’s team in the entire implementation process at each and every stage to achieve workmanship on
           the tasks we perform for our clientele. In this process, if we found any anomalies; we would immediately take
           corrective actions in time to avoid accumulated delays in meeting milestone deliveries, cost overruns and any
           wastages. </p>
         <P><b>Effective Communication: -</b> We know the value of Keep the Customer Informed (KCI). At each and every
-          stage we establish effective communication through various channels based on the preferences of our clientele.
-        <span id="dot">...</span><span id="mores"><b>Milestone Deliveries and Approvals: -</b> The ability to do a good proposal/plan alone will not satisfy
+          stage we establish effective communication through various channels based on the preferences of our clientele.<br>
+        <span id="dot">...</span><span id="mores">
+          <br><b>Milestone Deliveries and Approvals: -</b> The ability to do a good proposal/plan alone will not satisfy
           our clientele, the execution of the project and timely delivery of scheduled milestones with an approval would
           create our brand in the market space.<br>
+          <br>
         <b>Completion & Handing over: - </b>This would be the last stage of our project, we would ensure completion
           of all the tasks against a set of comprehensive checklists at each stage of delivery. After satisfactory
           completion of checklist verification, the site would be cleaned and removed all the unwanted materials, which
           would lead to site handing over phase.</span> </p>
-          <button onclick="myFun()" id="myBtns">Read more</button>
+          <button onclick="myFun()" id="myBtns">Read More</button>
       </div>
     </div>
   </div>
@@ -356,8 +364,8 @@
             </div>
             <div class="col-md-6 px-4">
               <h6> About Company</h6>
-              <a href="about.php" class="btn-footer"> More Info </a><br>
-              <a href="contact.php" class="btn-footer"> Contact Us</a>
+              <a href="about.php#abt" class="btn-footer"> More Info </a><br>
+              <a href="contact.php#cont" class="btn-footer"> Contact Us</a>
             </div>
           </div>
         </div>
@@ -367,12 +375,12 @@
               <h6> Help us</h6>
               <div class="row ">
                 <div class="col-md-6">
-                  <ul>
-                    <li> <a href="#"> Home</a> </li>
-                    <li> <a href="#"> About</a> </li>
-                    <li> <a href="#"> Service</a> </li>
-                    <li> <a href="#"> Gallery</a> </li>
-                    <li> <a href="#"> Contact</a> </li>
+                <ul>
+                    <li> <a href="index.php"> Home</a> </li>
+                    <li> <a href="about.php#abt"> About</a> </li>
+                    <li> <a href="our services.php#ser"> Service</a> </li>
+                    <li> <a href="gallery.php#reception"> Gallery</a> </li>
+                    <li> <a href="contact.php#cont"> Contact</a> </li>
                   </ul>
                 </div>
               </div>

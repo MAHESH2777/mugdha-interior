@@ -77,7 +77,7 @@
                 <a class="nav-link" href="our services.php#ser"><button  id="link3" style="background:none;border:none"><h2 class="menusize">SERVICES</h2></button></a>
               </li>
               <li class="nav-item" id="d"style="display: none">
-                    <a class="nav-link" href="gallery.php#reception"><button  id="link4" style="background:none;border:none"><h2 class="menusize">GALLERY</h2></button></a>
+                    <a class="nav-link" href="gallery.php#reception"><button  id="link4" style="background:none;border:none"><h2 class="menusize" id="active">GALLERY</h2></button></a>
                   </li>
                   <li class="nav-item" id="e"style="display: none">
                         <a class="nav-link" href="contact.php#cont"><button  id="link5" style="background:none;border:none"><h2 class="menusize">CONTACT</h2></button></a>
@@ -860,8 +860,8 @@
             </div>
             <div class="col-md-6 px-4">
               <h6> About Company</h6>
-              <a href="about.php" class="btn-footer"> More Info </a><br>
-              <a href="contact.php" class="btn-footer"> Contact Us</a>
+              <a href="about.php#abt" class="btn-footer"> More Info </a><br>
+              <a href="contact.php#cont" class="btn-footer"> Contact Us</a>
             </div>
           </div>
         </div>
@@ -871,13 +871,12 @@
               <h6> Help us</h6>
               <div class="row ">
                 <div class="col-md-6">
-                  <ul>
-                    <li> <a href="#"> Home</a> </li>
-                    <li> <a href="#"> About</a> </li>
-                    <li> <a href="#"> Service</a> </li>
-                    <li> <a href="#"> Team</a> </li>
-                    <li> <a href="#"> Help</a> </li>
-                    <li> <a href="#"> Contact</a> </li>
+                <ul>
+                    <li> <a href="index.php"> Home</a> </li>
+                    <li> <a href="about.php#abt"> About</a> </li>
+                    <li> <a href="our services.php#ser"> Service</a> </li>
+                    <li> <a href="gallery.php#reception"> Gallery</a> </li>
+                    <li> <a href="contact.php#cont"> Contact</a> </li>
                   </ul>
                 </div>
               </div>
