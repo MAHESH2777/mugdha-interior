@@ -16,6 +16,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
   <script src="https://cdn.rawgit.com/jotform/before-after.js/master/before-after.min.js"></script>
+  <script src='https://www.google.com/recaptcha/api.js' async defer></script>
   <script>
     $(document).ready(function () {
       $('.ba-slider').beforeAfter();
@@ -69,7 +70,7 @@
     <nav class="navbar navbar-expand-sm">
         <ul class="navbar-nav">
               <li class="nav-item" id="a" style="display: none">
-                <a class="nav-link" href="index.php"><button  id="link1" style="background:none;border:none"><h2 class="menusize">HOME</h2></button></a>
+                <a class="nav-link" href="http://www.mugdhainteriors.com/"><button  id="link1" style="background:none;border:none"><h2 class="menusize">HOME</h2></button></a>
               </li>
               <li class="nav-item" id="b" style="display: none">
                 <a class="nav-link" href="#abt"><button id="link2"  style="background:none;border:none"><h2 class="menusize" id="active">ABOUT</h2></button></a>
@@ -88,7 +89,7 @@
   </div>
   </div>
   <div class="logo ml-5">
-    <img src="images/mugdhaa logo.png" class="img-fluid" onclick="location.href='index.php'">
+    <img src="images/mugdhaa logo.png" class="img-fluid" onclick="location.href='http://www.mugdhainteriors.com/'">
   </div>
   <div data-ride="carousel" class="carousel carousel-fade" id="carousel-example-captions">
     <ol class="carousel-indicators">
@@ -110,9 +111,10 @@
             <h4> STARE</h4>
             </div>
             <div class="w3-banner-head4">
-            
+            <div class="house">
             <h3> HOUSE </h3>
             <h4>DECOR</h4>
+      </div>
       </div>
     </div>
   <div role="listbox" class="carousel-inner">
@@ -147,7 +149,7 @@
   <br>
   <br>
   <div class="modal fade" id="basicModal" tabindex="-1" role="dialog" aria-labelledby="basicModal" aria-hidden="true">
-  <div class="modal-dialog">
+  <div class="modal-dialog mdlwidth">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
@@ -155,7 +157,16 @@
         </button>
       </div>
       <div class="modal-body">
-        <?php include('contact_form.php'); ?>
+      <div class="container">
+  <div class="row">
+    <div class=" col-12 text-center">
+<h1 class="h2tag">Get In Touch</h1>
+  </div>
+    <div class="col-md-12">
+  <?php include('contact_form.php');?>
+  </div>
+</div>
+</div>
       </div>
     </div>
   </div>
@@ -178,7 +189,7 @@
         <span id="dots">...</span><span id="more">It is our policy to listen first, take notes and assist our customers in the development of their personal
           style. We love pushing the limits with creativity to satisfy the needs of our customer while crafting
           beautiful spaces.</span></p>
-          <button onclick="myFunction()" id="myBtn">Read More</button>
+          <button onclick="myFunction()" id="myBtn">Read more</button>
       </div>
       <div class="col-md-6 p-2 align-self-center">
         <img src="images/living room_WM/about.jpg" width="550px" class="img-fluid" style="border-radius:4px ">
@@ -333,7 +344,7 @@
               <div class="row ">
                 <div class="col-md-6">
                 <ul>
-                    <li> <a href="index.php"> Home</a> </li>
+                    <li> <a href="http://www.mugdhainteriors.com/"> Home</a> </li>
                     <li> <a href="about.php#abt"> About</a> </li>
                     <li> <a href="our services.php#ser"> Service</a> </li>
                     <li> <a href="gallery.php#reception"> Gallery</a> </li>

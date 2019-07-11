@@ -1,3 +1,6 @@
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css);
+@import url(https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.4.3/css/mdb.min.css);
+
 body{
   font-family: 'Roboto', sans-serif;
 }
@@ -263,14 +266,6 @@ body{
     font-size: 3em;
  }
 }
-
-
-
-
-
-
-
-
 
 
 
@@ -549,6 +544,10 @@ fieldset {
 .navbar{
 width: 100%;
 padding: 0px;
+box-shadow: none !important;
+
+  font-weight: 300;
+ padding-right: 0rem!important;
 
 }
 
@@ -581,19 +580,34 @@ padding: 0px;
     color: white;
  
 }
-@media screen and (max-width: 700px) and (min-width: 200px) {
+@media screen and (max-width: 349px) and (min-width: 200px) {
+  #link1{left: 4%};
+  }
+  @media screen and (max-width: 349px) and (min-width: 200px) {
+  #link2{left: 22% !important};
+  }
+  @media screen and (max-width: 349px) and (min-width: 200px) {
+  #link3{left: 39% !important};
+  }
+  @media screen and (max-width: 349px) and (min-width: 200px) {
+  #link4{left: 60% !important};
+  }
+  @media screen and (max-width: 349px) and (min-width: 200px) {
+  #link5{left: 79% !important}
+   }
+@media screen and (max-width: 700px) and (min-width: 350px) {
 #link1{left: 5%};
 }
-@media screen and (max-width: 700px) and (min-width: 200px) {
+@media screen and (max-width: 700px) and (min-width: 350px) {
 #link2{left: 22% !important};
 }
-@media screen and (max-width: 700px) and (min-width: 200px) {
+@media screen and (max-width: 700px) and (min-width: 350px) {
 #link3{left: 41% !important};
 }
-@media screen and (max-width: 700px) and (min-width: 200px) {
+@media screen and (max-width: 700px) and (min-width: 350px) {
 #link4{left: 61% !important};
 }
-@media screen and (max-width: 700px) and (min-width: 200px) {
+@media screen and (max-width: 700px) and (min-width: 350px) {
 #link5{left: 81% !important}
  }
 
@@ -619,24 +633,24 @@ padding: 0px;
 
 
    @media screen and (max-width: 1950px) and (min-width: 1450px) {
-    #link1{left: 7%;
-    top: 425px};
+    #link1{left: 7% !important;
+    top: 400px !important};
     }
     @media screen and (max-width: 1950px) and (min-width: 1450px) {
     #link2{left: 27% !important;
-      top: 425px};
+      top: 400px !important};
     }
     @media screen and (max-width: 1950px) and (min-width: 1450px) {
     #link3{left: 46% !important;
-      top: 425px};
+      top: 400px !important};
     }
     @media screen and (max-width: 1950px) and (min-width: 1450px) {
     #link4{left: 66% !important;
-      top: 425px};
+      top: 400px !important};
     }
     @media screen and (max-width: 1950px) and (min-width: 1450px) {
     #link5{left: 86% !important;
-      top: 425px}
+      top: 400px !important}
      }
   
 
@@ -734,13 +748,7 @@ padding: 0px;
         width: 50%
     }
     
-    .btn{
-        width: 25%;
-        float: left;
-        height: 40px;
-        font-size: 18px;
-    }
-    
+   
     .label_001{
     
         font-size: 18px;
@@ -820,22 +828,6 @@ padding: 0px;
       cursor: pointer;
     }
     
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .carousel-fade .carousel-item {
   display: block;
   position: absolute;
@@ -910,6 +902,7 @@ width: 250px;
     border-right: 5px solid #fe9200 !important;
  
   }
+ 
 }
 .w3-banner-head2 {
   position: absolute;
@@ -938,12 +931,15 @@ width: 250px;
   width: 12%;
   bottom: 13%;
   left: 41%;
-  text-align: center;
+  text-align: end;
   z-index: 5;
   padding-left: 1.5em;
   border-right: 10px solid #fe9200;
   color: #fff;
   text-transform: uppercase;
+}
+.house{
+  margin-right: 20px
 }
 
 #main{
@@ -1343,7 +1339,7 @@ color: white;
 }
 /*footer*/
 .bg-grey {
-  background: #292929;
+  background-color: #292929 !important;
 }
 .logo-footer {
   margin-bottom: 40px;
@@ -1431,4 +1427,112 @@ color: #f5f5f5 !important;
 .logo-part {
 border-right: 1px solid grey;
 height: 100%;
+}
+/* test */
+
+.hm-gradient {
+    background-image: linear-gradient(to top, #f3e7e9 0%, #e3eeff 99%, #e3eeff 100%);
+}
+.darken-grey-text {
+    color: #2E2E2E;
+}
+.danger-text {
+    color: #22a822; }
+.default-text {
+    color: #2BBBAD; 
+}
+.info-text {
+    color: #33b5e5; 
+}
+.form-white .md-form label {
+  color: #fff; 
+}
+.form-white input[type=text]:focus:not([readonly]) {
+    border-bottom: 1px solid #fff;
+    -webkit-box-shadow: 0 1px 0 0 #fff;
+    box-shadow: 0 1px 0 0 #fff; 
+}
+.form-white input[type=text]:focus:not([readonly]) + label {
+    color: #fff; 
+}
+.form-white input[type=password]:focus:not([readonly]) {
+    border-bottom: 1px solid #fff;
+    -webkit-box-shadow: 0 1px 0 0 #fff;
+    box-shadow: 0 1px 0 0 #fff; 
+}
+.form-white input[type=password]:focus:not([readonly]) + label {
+    color: #fff; 
+}
+.form-white input[type=password], .form-white input[type=text] {
+    border-bottom: 1px solid #fff; 
+}
+.form-white .form-control:focus {
+    color: #fff;
+}
+.form-white .form-control {
+    color: #fff;
+}
+.form-white textarea.md-textarea:focus:not([readonly]) {
+    border-bottom: 1px solid #fff;
+    box-shadow: 0 1px 0 0 #fff;
+    color: #fff; 
+}
+.form-white textarea.md-textarea  {
+    border-bottom: 1px solid #fff;
+    color: #fff;
+}
+.form-white textarea.md-textarea:focus:not([readonly])+label {
+    color: #fff;
+}
+.ripe-malinka-gradient {
+    background-image: linear-gradient(120deg, #f093fb 0%, #f5576c 100%);
+}
+.near-moon-gradient {
+    background-image: linear-gradient(to bottom, #5ee7df 0%, #b490ca 100%);
+}
+.divider-new, body, h1,h2, h3, h4, h5, h6 {
+  font-weight: 400 !important;
+} .waves-effect {
+  overflow: visible;
+  position: unset;
+}
+.fbtn{
+  border: 2px solid #22a822;
+  color: #22a822!important;
+  background-color: transparent;
+  border-radius: 30px;
+}
+.mdlwidth{
+  width: 100% !important;
+}
+.recpatch{
+  background-image: url(./images/cor1.jpg);
+  width: 100%;
+  height: 100%;
+  color: white;
+  text-align: center;
+  display: flex;
+
+
+  justify-content: center;
+  align-items: center;
+}
+.recpatch button{
+  background-color: #aebbae;
+  color: black;
+  padding: 5px 20px;
+  font-weight: bold;
+  border: none;
+  border: 2px solid white;
+  font-size: 15px;
+  border-radius: 20px
+}
+.recpatch a{
+color: white;
+text-decoration: none;
+cursor: pointer;
+
+}
+.h2tag{
+  color:#22a822;
 }

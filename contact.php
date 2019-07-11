@@ -17,6 +17,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
   <script src="https://cdn.rawgit.com/jotform/before-after.js/master/before-after.min.js"></script>
+  <script src='https://www.google.com/recaptcha/api.js' async defer></script>
   <script>
     $(document).ready(function () {
       $('.ba-slider').beforeAfter();
@@ -66,7 +67,7 @@
     <nav class="navbar navbar-expand-sm">
        <ul class="navbar-nav">
               <li class="nav-item" id="a" style="display: none">
-                <a class="nav-link" href="index.php"><button   id="link1" style="background:none;border:none"><h2 class="menusize">HOME</h2></button></a>
+                <a class="nav-link" href="http://www.mugdhainteriors.com/"><button   id="link1" style="background:none;border:none"><h2 class="menusize">HOME</h2></button></a>
               </li>
               <li class="nav-item" id="b" style="display: none">
                 <a class="nav-link" href="about.php#abt"><button id="link2"  style="background:none;border:none"><h2 class="menusize">ABOUT</h2></button></a>
@@ -85,7 +86,7 @@
   </div>
   </div>
   <div class="logo ml-5">
-    <img src="images/mugdhaa logo.png" class="img-fluid" onclick="location.href='index.php'">
+    <img src="images/mugdhaa logo.png" class="img-fluid" onclick="location.href='http://www.mugdhainteriors.com/'">
   </div>
   <div data-ride="carousel" class="carousel carousel-fade" id="carousel-example-captions">
     <ol class="carousel-indicators">
@@ -95,7 +96,6 @@
     </ol>
     <div class="w3-banner-heading">
       <div class="w3-banner-head1">
-
       <h3>AMPLITUDE</h3>
             <h4> CONTRIVANCE</h4>
             </div>
@@ -106,30 +106,28 @@
             <div class="w3-banner-head3">
             <h3> PROLIFIC</h3>
             <h4> STARE</h4>
-           
             </div>
             <div class="w3-banner-head4">
+            <div class="house">
             <h3> HOUSE </h3>
             <h4>DECOR</h4>
+            </div>
       </div>
     </div>
      <div role="listbox" class="carousel-inner">
             <div class="carousel-item active">
                     <img src="images/cor2.jpg" class="img-fluid imgh">
                 <div class="carousel-caption">
-                   
                 </div>
             </div>
             <div class="carousel-item">
                     <img src="images/cor1.jpg"  class="img-fluid imgh">
                 <div class="carousel-caption">
-               
                 </div>
             </div>
             <div class="carousel-item">
                     <img src="images/cor33.jpg"  class="img-fluid imgh">
                 <div class="carousel-caption">
-                   
                 </div>
             </div>
         </div>
@@ -144,7 +142,7 @@
   </div>
   <br>
   <br>
-  <h2 class="h1tag" id="cont">Location</h2>
+  <h2 class="h1tag" id="cont">Topography</h2>
   <div class="container-fluid">
     <div class="row">
       <div class="col-md-12">
@@ -152,9 +150,20 @@
       </div>
     </div>
   </div>
+  <div class="container" id="cap">
+  <br>
   <div class="container">
+  <div class="row">
+    <div class=" col-12 text-center">
+<h1 class="h1tag">Contact Us</h1>
+          </div>    
+<div class="col-md-12">
   <?php include('contact_form.php');?>
   </div>
+</div>
+</div>
+  </div>
+  <br>
   <!--footer-->
   <footer class="container-fluid bg-grey py-5">
     <div class="container">
@@ -189,7 +198,7 @@
               <div class="row ">
                 <div class="col-md-6">
                   <ul>
-                    <li> <a href="index.php"> Home</a> </li>
+                    <li> <a href="http://www.mugdhainteriors.com/"> Home</a> </li>
                     <li> <a href="about.php#abt"> About</a> </li>
                     <li> <a href="our services.php#ser"> Service</a> </li>
                     <li> <a href="gallery.php#reception"> Gallery</a> </li>
@@ -221,5 +230,9 @@
       $("#e").toggle(1500);
     });
   });
+</script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.4.1/js/mdb.min.js"></script>
+<script>
+$('.waves-effect').removeClass('waves-effect ');
 </script>
 </html>

@@ -12,10 +12,8 @@
     <link href="https://www.fontspace.com/abstrukt?" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="style3.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-    <script src="https://cdn.rawgit.com/jotform/before-after.js/master/before-after.min.js"></script>
+    <script src='https://www.google.com/recaptcha/api.js' async defer></script>
+
     <script>
         $(document).ready(function() {
             $('.ba-slider').beforeAfter();
@@ -67,7 +65,7 @@
     </div>
 
     <div class="totop">
-        <a href="index.php" class="toTop">
+        <a href="http://www.mugdhainteriors.com/" class="toTop">
             <button style="background: transparent;border:none"><img src="images/up-chevron.png"></button>
         </a>
     </div>
@@ -75,9 +73,10 @@
     <button class="but"><img src="images/menu (2).png"></button>
     <div class="navtop">
         <nav class="navbar navbar-expand-sm">
+
             <ul class="navbar-nav">
                 <li class="nav-item" id="a" style="display: none">
-                    <a class="nav-link " href="index.php"><button id="link1" style="background:none;border:none">
+                    <a class="nav-link " href="http://www.mugdhainteriors.com/"><button id="link1" style="background:none;border:none">
                             <h2 class="menusize" id="active">HOME</h2>
                         </button></a>
                 </li>
@@ -106,7 +105,7 @@
     </div>
     </div>
     <div class="logo ml-5">
-        <img src="images/mugdhaa logo.png" class="img-fluid" onclick="location.href='index.php'">
+        <img src="images/mugdhaa logo.png" class="img-fluid" onclick="location.href='http://www.mugdhainteriors.com/'">
     </div>
     <div data-ride="carousel" class="carousel carousel-fade" id="carousel-example-captions">
         <ol class="carousel-indicators" id="ind">
@@ -129,8 +128,10 @@
 
             </div>
             <div class="w3-banner-head4">
+          <div class="house">
                 <h3> HOUSE </h3>
                 <h4>DECOR</h4>
+    </div>
             </div>
         </div>
 
@@ -170,7 +171,7 @@
 
         <!-- basic modal -->
         <div class="modal fade" id="basicModal" tabindex="-1" role="dialog" aria-labelledby="basicModal" aria-hidden="true">
-            <div class="modal-dialog">
+            <div class="modal-dialog mdlwidth">
                 <div class="modal-content">
                     <div class="modal-header">
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
@@ -178,7 +179,16 @@
                         </button>
                     </div>
                     <div class="modal-body">
-                        <?php include('contact_form.php'); ?>
+                    <div class="container">
+  <div class="row">
+      <div class="col-12 text-center">
+<h1 class="h2tag">Get In Touch</h1>
+    </div>
+    <div class="col-md-12">
+  <?php include('contact_form.php');?>
+  </div>
+</div>
+</div>
                     </div>
                 </div>
             </div>
@@ -300,9 +310,7 @@
                         </div>
                     </div>
                 </div>
-
             </div>
-
         </div>
     </div>
     <!--our design-->
@@ -401,7 +409,7 @@
     <br>
     <div class="contact">
         <div class="container-fluid">
-            <h1 class="h1tag"> Location</h1>
+            <h1 class="h1tag">Topography</h1>
             <br>
             <div class="row">
                 <div class="col-md-12">
@@ -410,52 +418,48 @@
             </div>
         </div>
         <br>
-        <div class="container">
+
+    <div class="container">
             <div class="row">
+                <!-- Grid column -->
+                <div class="col-md-12 mb-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <!-- Form contact -->
+                            <form  name="myForm" action="" method="POST" onsubmit="return myFunction()">
+                            <h1 class="h1tag">Contact Us</h1>
+                                <div class="md-form">
+                                    <i class="fa fa-user prefix grey-text"></i>
+                                    <input type="text" name="name" class="form-control" autocomplete="off" required>
+                                    <label for="form31">Your name</label>
+                                </div>
+                                <div class="md-form">
+                                    <i class="fa fa-envelope prefix grey-text"></i>
+                                    <input type="text" name="email" class="form-control" autocomplete="off" required>
+                                    <label for="form21">Your email</label>
+                                </div>
+                                <div class="md-form">
+                                    <i class="fa fa-phone prefix grey-text"></i>
+                                    <input type="number" name="number" id="mobile-numbers" autocomplete="off" class="form-control">
+                                    <span id="Mes"> </span>
+                                    <label for="form341">Phone</label>
+                                </div>
+                                <div class="md-form">
+                                    <i class="fa fa-pencil prefix grey-text"></i>
+                                    <textarea type="text" name="message" class="md-textarea" style="height: 100px"></textarea>
+                                    <label for="form81">Your message</label>
+                                </div>
+                                <div class="g-recaptcha" data-sitekey="6LfauawUAAAAAJomiLf6OY2Lm3sEeHm_tU3ET10J"></div>
 
-                <div class="col-md-12 fmbg">
-                    <form name="myForm" id="contact" action="" method="POST" onsubmit="return myFunction()">
-                        <h2 class="h1tag">Quick Contact</h2>
-                        <h4>Contact us today, and get reply with in 24 hours!</h4>
-                        <div>
-                            <span> <i class="fa fa-user fa-2x" style="color:gray"></i></span>
-                            <fieldset>
-
-                                <input placeholder="Yourname" name="name" type="text" tabindex="1" required>
-
-                            </fieldset>
-                        </div>
-                        <div>
-                            <span> <i class="fa fa-envelope-square fa-2x" style="color:gray"></i></span>
-                            <fieldset>
-
-                                <input placeholder=" Your Email Address" name="email" type="email" tabindex="2" required>
-
-                            </fieldset>
-                        </div>
-                        <div>
-                            <span> <i class="fa fa-phone fa-2x" style="color:gray"></i></span>
-                            <fieldset>
-
-                                <input placeholder="Your Phone Number" name="number" id="mobile-number" type="tel" tabindex="3">
-                                <span id="Mes"> </span>
-                            </fieldset>
-                        </div>
-                        <div>
-                            <span style="float-left"> <i class="fa fa-user fa-2x" style="color:gray"></i></span>
-                            <fieldset>
-
-                                <textarea placeholder="Type your Message Here...." name="message" tabindex="5"></textarea>
-                            </fieldset>
-                        </div>
-                        <fieldset>
-                            <button name="submit" type="submit" id="" value="send" name="save" data-submit="...Sending">Submit</button>
-                        </fieldset>
-                    </form>
-                    <script>
+                                <div class="text-center">
+                                    <button class="btn fbtn btn-lg"  name="submit" type="submit" id="" value="send" name="save">Send</button>
+                                </div>
+                            </form>
+                            <!-- Form contact -->
+                            <script>
                         function myFunction() {
 
-                            var a = document.getElementById("mobile-number").value;
+                            var a = document.getElementById("mobile-numbers").value;
                             if (a == "") {
                                 document.getElementById("Mes").innerHTML = "Please Enter Mobile Number";
                                 return false;
@@ -465,23 +469,23 @@
                                 return false;
                             }
 
-                            if (a.length < 10) {
-                                document.getElementById("Mes").innerHTML = "Mobile Number must be 10 digits";
+                            if (a.length > 15) {
+                                document.getElementById("Mes").innerHTML = "Mobile Number must be below 15 digits";
                                 return false;
                             }
 
-                            if (a.length > 10) {
+                            if (a.length < 9) {
                                 document.getElementById("Mes").innerHTML = "Mobile Number must be 10 digits ";
                                 return false;
                             }
 
                         }
                     </script>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-    <br>
 
     <!--footer-->
     <footer class="container-fluid bg-grey py-5">
@@ -517,7 +521,7 @@
                             <div class="row ">
                                 <div class="col-md-6">
                                     <ul>
-                                        <li> <a href="index.php"> Home</a> </li>
+                                        <li> <a href="http://www.mugdhainteriors.com/"> Home</a> </li>
                                         <li> <a href="about.php#abt"> About</a> </li>
                                         <li> <a href="our services.php#ser"> Service</a> </li>
                                         <li> <a href="gallery.php#reception"> Gallery</a> </li>
@@ -538,7 +542,12 @@
             </div>
         </div>
         </div>
+   
 </body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<script src="https://cdn.rawgit.com/jotform/before-after.js/master/before-after.min.js"></script>
 <script>
     $(document).ready(function() {
         $(".but").click(function() {
@@ -555,4 +564,9 @@
         interval: 4000
     });
 </script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.4.1/js/mdb.min.js"></script>
+<script>
+$('.waves-effect').removeClass('waves-effect ');
+</script>
+
 </html>
